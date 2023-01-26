@@ -1,0 +1,64 @@
+// ovde priznajem da sam verovatno trebao malo bolje da uradim stajling medjutim
+// neke stvari su mi bile nepoznate kao na primer kako da sredim avatar ikonice
+// da izgledaju kao stack, sto naravno verujem da mogu nauciti vrlo brzo
+
+.single
+    min-height: 60px
+    max-width: 250px
+    border-radius: 6px
+    background-color: #FFFFFF
+    box-shadow: 0 2px 7px -2px rgba(0,0,0,0.2)
+    padding: 10px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 5px
+    position: relative
+    &.done
+        background-color: #F3FFFC
+    &__title
+        height: 40px
+        width: 80%
+        color: #373737
+        font-size: 14px
+        letter-spacing: 0.3px
+        line-height: 18px
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        line-clamp: 2
+        -webkit-box-orient: vertical
+    &__down
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__date
+        height: 16px
+        // width: 94px
+        color: #373737
+        font-size: 13px
+        font-weight: bold
+        letter-spacing: 0
+        line-height: 15px
+    &__more
+        display: flex
+        align-items: center
+        gap: 10px
+    &__info
+        display: flex
+        align-items: center
+        gap: 5px
+    &__desc
+        height: 14px
+        width: 7px
+        color: #8E8E8E
+        font-size: 12px
+        letter-spacing: 0
+        line-height: 14px
+    &__circle
+        height: 8px
+        width: 8px
+        border-radius: 50%
+        background-color: #F47075
